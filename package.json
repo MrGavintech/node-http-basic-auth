@@ -8,7 +8,7 @@
         "test-server": "set NODE_ENV=development&& nodemon --inspect server.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "pretty-quick": "pretty-quick --ignore-path \"./node_modules/**/*.js\"",
-        "lint" : "./node_modules/.bin/eslint \"**/*.js\" --ignore-pattern node_modules/"
+        "lint": "./node_modules/.bin/eslint \"**/*.js\" --ignore-pattern node_modules/"
     },
     "author": "Gavin M.",
     "license": "MIT",
@@ -16,7 +16,8 @@
         "body-parser": "^1.19.0",
         "config": "3.2.2",
         "express": "^4.17.1",
-        "express-basic-auth": "^1.2.0"
+        "express-basic-auth": "^1.2.0",
+        "helmet": "3.20.0"
     },
     "devDependencies": {
         "eslint": "6.2.2",
