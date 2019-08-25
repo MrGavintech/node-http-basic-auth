@@ -6,9 +6,8 @@ const routes = require('./routes/routes.js');
 const app = express();
 const config = require('config');
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
-    console.log('Environment is ' + config.get('env'));
+const server = app.listen(process.env.PORT || 3000, () => {
+    console.log('Worker started on PORT ' + server.address().port + ' and PID is ' + process.pid);
 });
 
 app.use(
